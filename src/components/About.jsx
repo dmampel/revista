@@ -6,7 +6,6 @@ import { Fade, Slide } from "react-awesome-reveal";
 export default function About(){
     return(
         <div>
-            
             <div className="flex flex-col items-center mx-auto mt-10 gap-10 lg:flex-row lg:w-1/2">
                 
                 <img className='max-w-[50%] md:max-w-[30%]' src={hand} alt="rockers hand" />
@@ -21,12 +20,7 @@ export default function About(){
                 <strong className="text-[#EF26BD] font-normal"> Stone</strong>
             </h1>
             
-            
-            
-
             <Footer />
-            
-            
         </div>
     )
 }

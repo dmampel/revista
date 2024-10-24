@@ -1,6 +1,7 @@
 import Home from './Home.jsx';
 import Navbar from './Navbar.jsx';
 import About from './About.jsx';
+import Archive from './Archive.jsx';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 export default function App() {
@@ -13,6 +14,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/archive" element={<Archive />} />
           
           
         </Routes>
