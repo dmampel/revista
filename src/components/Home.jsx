@@ -17,6 +17,7 @@ export default function Home(){
                 <img className='absolute top-56 lg:top-2 lg:left-[5em] lg:w-[70%]' src={bg} alt="" />
                 <small className="font-mono text-xs absolute font-extrabold top-[27.5em] left-6 md:top-[11rem] md:left-12 text-gray-800"> pequeño homenaje a una gran revista</small>
             </div>
+            <Footer />
         </div>
     )
 }
