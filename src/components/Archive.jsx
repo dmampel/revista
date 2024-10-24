@@ -35,7 +35,8 @@ export default function Archive(){
     }, []); // 
     
     return (
-        <div className="ml-10 grid grid-cols-4 gap-4">
+        
+        <div className="grid grid-cols-4 gap-4">
           {shuffledImages.map((imageId, index) => {
             const img = cld
               .image(imageId)  // Usar solo el número como publicId
@@ -47,7 +48,7 @@ export default function Archive(){
             );
           })}
         </div>
-      );
+    );
   
     
 };
