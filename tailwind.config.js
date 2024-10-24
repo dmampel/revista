@@ -6,9 +6,15 @@ export default {
   ],
   theme: {
     extend: {
-        fontFamily:{
-          
-        }
+      fontFamily: {
+        'mouse-memoirs': ['"Mouse Memoirs"', 'sans-serif'],
+      },
+      fontWeight: {
+        regular: 400,
+      },
+      fontStyle: {
+        normal: 'normal',
+      },
     },
   },
   plugins: [],
