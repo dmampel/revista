@@ -22,6 +22,8 @@ import eminem from '../assets/img/covers/eminem.png';
 import miloj from '../assets/img/covers/miloj.png';
 import pity from '../assets/img/covers/pity.png';
 import roger from '../assets/img/covers/roger.png';
+import dave2 from '../assets/img/covers/dave.png';
+import cure from '../assets/img/covers/thecure.png';
 
 import Item from "./Item";
 
@@ -32,30 +34,32 @@ export default function Footer(){
         
 
         <div className="fixed bottom-0">
-            <ul className="flex flex-row">
-                <Item src={dave} right='r-0' left='l-0' top='t-0' index='z-0'/>
-                <Item src={bowie} right='' left='' top='top-[1rem]' index='z-0'/>
-                <Item src={red} right='' left='-l-[1rem]' top='' index='z-1'/>
-                <Item src={lana} right={0} left={0} top={0} index={0}/>
-                <Item src={amy} right={0} left={0} top={0} index={0}/>
-                <Item src={oasis} right={0} left={0} top={0} index={0}/>
-                <Item src={billiejoe} right={0} left={0} top={0} index={0}/>
-                <Item src={marilyn} right={0} left={0} top={0} index={0}/>
-                <Item src={harry} right={0} left={0} top={0} index={0}/>
-                <Item src={riri} right={0} left={0} top={0} index={0}/>
-                <Item src={badbunny} right={0} left={0} top={0} index={0}/>
-                <Item src={billie} right={0} left={0} top={0} index={0}/>
-                <Item src={kanye} right={0} left={0} top={0} index={0}/>
-                <Item src={michael} right={0} left={0} top={0} index={0}/>
-                <Item src={youngblud} right={0} left={0} top={0} index={0}/>
-                <Item src={nirvana} right={0} left={0} top={0} index={0}/>
-                <Item src={elton} right={0} left={0} top={0} index={0}/>
-                <Item src={charly} right={0} left={0} top={0} index={0}/>
-                <Item src={metallica} right={0} left={0} top={0} index={0}/>
-                <Item src={eminem} right={0} left={0} top={0} index={0}/>
-                <Item src={miloj} right={0} left={0} top={0} index={0}/>
-                <Item src={pity} right={0} left={0} top={0} index={0}/>
-                <Item src={roger} right={0} left={0} top={0} index={0}/>
+            <ul className="flex flex-row items-baseline">
+                <Item src={dave} />
+                <Item src={bowie} />
+                <Item src={red}/>
+                <Item src={lana} />
+                <Item src={amy} />
+                <Item src={oasis} />
+                <Item src={billiejoe} />
+                <Item src={marilyn} />
+                <Item src={harry} />
+                <Item src={riri} />
+                <Item src={badbunny} />
+                <Item src={billie} />
+                <Item src={kanye} />
+                <Item src={michael} />
+                <Item src={youngblud} />
+                <Item src={nirvana} />
+                <Item src={elton} />
+                <Item src={charly} />
+                <Item src={metallica} />
+                <Item src={eminem} />
+                <Item src={miloj} />
+                <Item src={pity} />
+                <Item src={roger} />
+                <Item src={dave2} />
+                <Item src={cure} />
 
             </ul>
         </div>
