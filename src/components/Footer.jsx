@@ -1,4 +1,5 @@
 import React from "react";
+import {Roll} from "react-awesome-reveal";
 const covers = [
     'davegrohl.svg', 'bowie.svg', 'red.svg', 'lana.svg', 'amy.svg', 'oasis.svg',
     'billiejoe.svg', 'marilyn.svg', 'harry.svg', 'riri.svg', 'badbunny.svg',
@@ -14,11 +15,14 @@ export default function Footer(){
 
         <div className="fixed bottom-0">
             <ul className="flex flex-row items-baseline">
-                {covers.map((cover, index) => (
-                <li key={index}>
-                    <a href="http://"><img className='max-w-11 hover:-translate-y-3 transition' src={`/covers/${cover}`} alt={cover.replace('.svg', '').replace('.png', '')} /></a>
-                </li>
-                ))}
+                <Roll cascade>
+                    {covers.map((cover, index) => (
+                    <li key={index}>
+                        <a href="http://"><img className='max-w-11 hover:-translate-y-3 transition' src={`/covers/${cover}`} alt={cover.replace('.svg', '').replace('.png', '')} /></a>
+                    </li>
+                    ))}
+                </Roll>
+                
             </ul>
         </div>
             
