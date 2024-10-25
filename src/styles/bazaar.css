@@ -1,0 +1,16 @@
+.background {
+  position: absolute;
+  width: calc(100vw + 500px);
+  height: calc(100vh + 500px);
+  background-image: url('../assets/img/bazaar-bg.jpg');
+  background-size: cover;
+  transition: transform 0.1s ease;
+  overflow-anchor: none;
+  
+}
+
+.revista {
+  position: absolute;
+  top: calc(100% * var(--top));
+  left: calc(100% * var(--left));
+}
