@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes slow-bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-1rem); /* Ajusta la altura según lo necesites */
+    }
+}
 
+.animate-slow-bounce {
+    animation: slow-bounce 1.7s ease-in-out infinite; /* Cambia 1s a la duración que desees */
+}
 
   

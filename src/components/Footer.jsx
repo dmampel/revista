@@ -1,5 +1,6 @@
 import React from "react";
 import {Roll} from "react-awesome-reveal";
+import { Link } from 'react-router-dom';
 const covers = [
     'davegrohl.svg', 'bowie.svg', 'red.svg', 'lana.svg', 'amy.svg', 'oasis.svg',
     'billiejoe.svg', 'marilyn.svg', 'harry.svg', 'riri.svg', 'badbunny.svg',
@@ -18,7 +19,7 @@ export default function Footer(){
                 <Roll cascade>
                     {covers.map((cover, index) => (
                     <li key={index}>
-                        <a href="http://"><img className='max-w-11 hover:-translate-y-3 transition' src={`/covers/${cover}`} alt={cover.replace('.svg', '').replace('.png', '')} /></a>
+                        <Link to='/bazaar'><img className='max-w-11 hover:-translate-y-3 transition' src={`/covers/${cover}`} alt={cover.replace('.svg', '').replace('.png', '')} /></Link>
                     </li>
                     ))}
                 </Roll>
