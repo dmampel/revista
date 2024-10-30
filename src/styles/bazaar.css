@@ -11,6 +11,7 @@
 
 .revista {
   position: absolute;
-  top: calc(100% * var(--top));
-  left: calc(100% * var(--left));
+  top: var(--top);
+  left: var(--left);
+  
 }

@@ -21,14 +21,40 @@ export default function Bazaar() {
 
   return (
     <div
-    className="background"
-    onMouseMove={handleMouseMove}
-    style={{ transform: `translate(-${position.x}%, -${position.y}%)` }}
-    >
-    {/* Aquí puedes mapear las revistas */}
-    <div className="revista" style={{ '--top': 0.1, '--left': 0.2 }}>Revista 1</div>
-    <div className="revista" style={{ '--top': 0.3, '--left': 0.6 }}>Revista 2</div>
-  </div>
+  className="background"
+  onMouseMove={handleMouseMove}
+  style={{ transform: `translate(-${position.x}%, -${position.y}%)` }}
+>
+  {shuffledImages.map((imageId, index) => {
+    // Genera valores aleatorios de top y left para cada revista
+    const top = Math.random() * 150;  // Valores entre 0 y 90 para top
+    const left = Math.random() * 150; // Valores entre 0 y 90 para left
+
+    // Crea la imagen de Cloudinary
+    const img = cld
+      .image(imageId)
+      .format('auto')
+      .quality('auto');
+
+    return (
+      <div
+        key={index}
+        className="revista"
+        style={{ 
+          '--top': `${top}%`, 
+          '--left': `${left}%` 
+        }}
+      >
+        <AdvancedImage 
+          className='max-w-[20%] mx-auto  transition-transform duration-300 cursor-pointer' 
+          cldImg={img} 
+        />
+        
+      </div>
+    );
+  })}
+</div>
+
   );
 }
 
