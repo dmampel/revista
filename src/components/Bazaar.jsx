@@ -29,7 +29,7 @@ export default function Bazaar() {
     <section
         className="background cursor-none"
         onMouseMove={handleMouseMove}
-        style={{ transform: `translate(-${position.x}%, -${position.y}%)` }}
+        style={{ transform: `translate3d(-${position.x}%, -${position.y}%, 0)` }}
     >
       
       {images.map(({ id, top, left, rotation }) => {
