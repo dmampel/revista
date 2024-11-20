@@ -4,6 +4,7 @@ import About from './About.jsx';
 import Archive from './Archive.jsx';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Bazaar from './Bazaar.jsx';
+import NotFound from './NotFound.jsx';
 
 export default function App() {
 
@@ -17,6 +18,8 @@ export default function App() {
           <Route path="/about" element={<About />} />
           <Route path="/archive" element={<Archive />} />
           <Route path="/bazaar" element={<Bazaar />} />
+          <Route path='*' element={<NotFound />} />
+          
           
           
         </Routes>

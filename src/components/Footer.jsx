@@ -19,7 +19,7 @@ export default function Footer(){
                 <Roll cascade>
                     {covers.map((cover, index) => (
                     <li key={index}>
-                        <Link to='/bazaar'><img className='max-w-11 hover:-translate-y-3 transition' src={`/covers/${cover}`} alt={cover.replace('.svg', '').replace('.png', '')} /></Link>
+                        <Link to='/bazaar'><img className='max-w-14 hover:-translate-y-3 transition' src={`/covers/${cover}`} alt={cover.replace('.svg', '').replace('.png', '')} /></Link>
                     </li>
                     ))}
                 </Roll>

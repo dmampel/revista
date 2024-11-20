@@ -8,8 +8,8 @@ export default function About(){
         <div>
             <div className="flex flex-col items-center mx-auto mt-10 gap-10 lg:flex-row lg:w-1/2">
                 
-                <img className='max-w-[50%] md:max-w-[30%] animate-slow-bounce' src={hand} alt="rockers hand" />
-                <p className=" w-full md:w-[40%] text-justify font-mono ">
+                <img className='max-w-[35%] md:max-w-[30%] animate-slow-bounce' src={hand} alt="rockers hand" />
+                <p className=" w-[90%] md:w-[40%] text-justify font-mono md:text-lg">
                     The best entertainment magazine that has been highly regarded in pop culture circles for its music and movie reviews, hard-hitting articles and interviews with favorite musicians, AND the <strong className="italic underline decoration-pink-600">always-iconic</strong> cover images touting popular bands, TV personalities and public figures.
 
                 </p>
